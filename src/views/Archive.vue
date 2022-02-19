@@ -1,5 +1,6 @@
 
 <template>
+    <h1>Archived Items:</h1>
     <TodoList location="archive" />
 </template>
 

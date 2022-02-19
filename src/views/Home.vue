@@ -1,5 +1,6 @@
 
 <template>
+    <h1>To do list</h1>
     <TodoList location="home" />
 </template>
 
