@@ -1,10 +1,4 @@
 <template>
-    <div id="countries">
-        <div class="country-item" v-for="(item, index) in countries" :key="index">
-            <h2>{{ item.name }} States:</h2>
-            <p v-for="(state, i) in item.states" :key="i">{{ state.name }}</p>
-        </div>
-    </div>
     <div id="todo-list">
         <div class="list-item" v-for="n in todos" :key="n.id">
             <div class="list-item-holder" v-if="n.location == location" :data-status="n.completed">
@@ -42,26 +36,6 @@ export default {
         const store = useStore()
         return {
             todos: store.getters.todos,
-            countries: [
-                { 
-                    name: "UK", 
-                    states: [{
-                        name: "London",
-                        lowerCaseName: "london"
-                    },
-                    {
-                        name: "Scotland",
-                        lowerCaseName: "scotland"
-                    }]
-                },
-                {
-                    name: "India",
-                    states: [{
-                        name: "Madhya Pradesh",
-                        lowerCaseName: "madhya-pradesh"
-                    }]
-                }
-            ]
         }
     },
     methods: {
