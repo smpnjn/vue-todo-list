@@ -10,8 +10,6 @@
 import TodoList from '../components/TodoList.vue';
 import VueDepthCard from 'vue-depth-card'
 
-console.log(VueDepthCard);
-
 export default { 
     name: "HomePage",
     components: {
